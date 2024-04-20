@@ -21,6 +21,9 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet
+
 # Kernel
 TARGET_KERNEL_CONFIG := sweet_defconfig
 
